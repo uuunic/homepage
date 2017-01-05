@@ -1,4 +1,4 @@
-from django.db import models
+
 from django.db import models
 from django.contrib import admin
 
@@ -6,6 +6,7 @@ from django.contrib import admin
 class BlogsPost(models.Model):
     title = models.CharField(max_length = 150)
     body = models.TextField()
+    add_temp = models.BigIntegerField(default=123)
     timestamp = models.DateTimeField()
 
 
